@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS task</title>
+        </head>
+        <body>
+            <b>Enter lenght of the array:</b></br>
+            <input type="number" id="arrlenght"></br>
+            <b>Enter new number to the array</b></br>
+            <input type="number" id="new_item">
+            <input type="button" value="Add new number" id="addbtn">
+            <b id="results"></b></br>
+            <script type="text/javascript">
+            var results=document.getElementById("results");    
+          var addbtn=document.getElementById("addbtn");      
+          var newitem=document.getElementById("new_item").value;  
+          var new_int=parseInt(newitem);
+           var max_len=document.getElementById("arrlenght").value;
+          var max_int=parseInt(max_len);
+          var inputarr=[]; var outputarr=[]; var N=0;
+          addbtn.addEventListener("click",function(){
+          var i; 
+              for(i=0;i<=max_int;i++){
+              inputarr.push(new_int);    
+               N++; var first_middle=N%2; var firstoutput; var secondoutput;
+                  if(N%2==0){
+                      var first_middleindex=inputarr[first_middle];
+                      var second_middleindex=first_middleindex++;
+                      firstoutput=(first_middleindex+second_middleindex)/2;
+                  
+                  }
+                  else{
+                      var secondround=Math.round(first_middle);
+                     secondoutput=inputarr[secondround];
+                  }
+              outputarr.push(firstoutput);
+              outputarr.push(secondoutput);    
+            results.innerHTML(outputarr[i]);   
+              }
+          });
+
+                </script>
+            </body>
+    </html>
