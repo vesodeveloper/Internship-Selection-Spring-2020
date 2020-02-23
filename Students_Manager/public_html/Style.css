@@ -1,0 +1,56 @@
+body{
+    background: wheat;
+    padding: 0;
+    margin: 0;
+    
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.nav{
+   background-color: #444;
+   overflow: hidden;
+   position: fixed;
+   width: 100%;
+}
+.nav a{
+    float: left;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 13px 15px;
+    text-decoration: none;
+   
+}
+#userlogo{
+    overflow: hidden;
+  color: #ffffff;
+}
+#home{
+    width: 100%;
+    background: green;
+    
+}
+#feat{
+    color: red;
+    background-color: yellowgreen;
+}
+.centertext{
+    text-align: center;
+}
+#about{
+    width: 100%;
+    background-color:  brown;
+}
+#mission{
+    width: 100%;
+}
+#advert{
+    width: 100%;
+    background: wheat;
+}
+#map{
+    width: 100%;
+}

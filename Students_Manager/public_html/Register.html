@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <h1>Register new student</h1>
+        <form method="post" action="Registered.php">
+            <div> 
+                <input type="text" name="n_Name" placeholder="Name:" required></div></br>
+                <div> 
+                    <input type="email" name="n_Email" placeholder="E-mail:" required></div></br>
+                    <div> 
+                        <input type="number" name="n_Age" placeholder="Age:" required></div></br>
+                        <div>
+                            <input type="text" name="n_PhNum" placeholder="Tel:" required></div></br>
+                            <div>  <label for="pref_way">Preferred Way of Communication</label></br>
+            <div id="pref_way">
+                <input type="radio"  name="pref_email" required><label>E-mail</label>
+                <input type="radio"  name="pref_phone" required><label>Phone</label>
+            </div></div></br>
+            <label>English Level:</label></br>
+            <select name="levelmenu" >
+                <option required>A1</option>
+                <option required>A2</option> 
+                <option required>B1</option> 
+                <option required>B2<option> 
+                <option required>C1</option> 
+                <option required>C2</option> 
+            </select></br>
+            <label>Available to Start </label>
+            <input type="date" name="n_date" required></br>
+            <textarea name="n_tech">Enter  Technical Skills:</textarea></br>
+            <textarea name="n_PI">Enter Personal info:</textarea></br>
+            <input type="checkbox" name="sfromhome"><label>Study from Home</label></br>
+            <input type="submit" value="Register User">
+        </form>
+    </body>
+</html>
